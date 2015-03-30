@@ -4,10 +4,10 @@ body{padding:0px;border: 0px;margin: 0px;background-color: white;}
 
 #titlename{width: 75%;height: 56px;float: left;line-height: 56px;}
 
-#username{width: 25%;height: 56px;float: left;line-height: 56px;text-align: center;}
+#username{width: 25%;height: 56px;float: left;line-height: 56px;}
 
 #userpic{width: 40px;height: 40px;margin-top: 8px;margin-bottom: 8px;float: left;margin-left: 10px;margin-right: 5px;border-radius: 20px;}
 
-#namediv{height: 56px;color: white;line-height: 56px;}
+#namediv{height: 56px;color: white;line-height: 56px;font-size: 20px;}
 
 #footer{position: absolute;bottom:0px;height: 25px;width: 100%;background-color: #000000;padding: 0px;margin:0px;line-height: 25px;text-align: center;left: 0px;color: white;}
