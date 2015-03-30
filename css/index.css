@@ -6,7 +6,7 @@ body{padding:0px;border: 0px;margin: 0px;background-color: white;}
 
 #username{width: 30%;height: 56px;float: left;line-height: 56px;text-align: center;}
 
-#userpic{width: 30px;height: 30px;margin-top: 13px;margin-bottom: 13px;float: left;margin-left: 10px;margin-right: 5px;border-radius: 15px;}
+#userpic{width: 30px;height: 30px;margin-top: 10px;margin-bottom: 10px;float: left;margin-left: 10px;margin-right: 5px;border-radius: 18px;}
 
 #namediv{height: 56px;}
 
