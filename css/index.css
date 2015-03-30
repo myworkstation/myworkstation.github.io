@@ -10,8 +10,8 @@ body{padding:0px;border: 0px;margin: 0px;background-color: white;}
 
 #namediv{height: 56px;color: white;line-height: 56px;font-size: 20px;margin-left: 15px;float: left;}
 
-#container{width: 100%;height: 700px;background-size:100% 700px;background-repeat: no-repeat;margin: 0px;}
+#container{width: 100%;height: 700px;margin: 0px;}
 
-#contextdiv{margin-left: 20px;margin-right: 20px;}
+#contextdiv{margin: 0px;margin-left: 20px;margin-right: 20px;}
 
 #footer{position: absolute;bottom:0px;height: 25px;width: 100%;background-color: #000000;padding: 0px;margin:0px;line-height: 25px;text-align: center;left: 0px;color: white;}
