@@ -8,6 +8,6 @@ body{padding:0px;border: 0px;margin: 0px;background-color: white;}
 
 #userpic{width: 40px;height: 40px;margin-top: 8px;margin-bottom: 8px;float: left;margin-left: 10px;margin-right: 5px;border-radius: 20px;}
 
-#namediv{height: 56px;color: white;line-height: 56px;font-size: 20px;margin-left: 25px;float: left;}
+#namediv{height: 56px;color: white;line-height: 56px;font-size: 25px;margin-left: 15px;float: left;}
 
 #footer{position: absolute;bottom:0px;height: 25px;width: 100%;background-color: #000000;padding: 0px;margin:0px;line-height: 25px;text-align: center;left: 0px;color: white;}
