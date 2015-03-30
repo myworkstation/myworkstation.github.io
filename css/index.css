@@ -10,4 +10,4 @@ body{padding:0px;border: 0px;margin: 0px;background-color: white;}
 
 #namediv{height: 56px;}
 
-#footer{position: absolute;bottom:0px;height: 25px;width: 100%;background-color: #888888;padding: 0px;margin:0px;line-height: 25px;text-align: center;left: 0px;}
+#footer{position: absolute;bottom:0px;height: 25px;width: 100%;background-color: #000000;padding: 0px;margin:0px;line-height: 25px;text-align: center;left: 0px;color: white;}
