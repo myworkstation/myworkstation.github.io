@@ -6,9 +6,13 @@ html,body{width:100%;height:100%;overflow: hidden; padding:0px;border: 0px;margi
 
 #username{width: 22%;height: 56px;float: left;line-height: 56px;}
 
+#username:hover{color: #EEEEEE;}
+
 #userpic{width: 40px;height: 40px;margin-top: 8px;margin-bottom: 8px;float: left;margin-left: 10px;margin-right: 5px;border-radius: 20px;opacity: 1;}
 
 #namediv{height: 56px;color: white;line-height: 56px;font-size: 20px;margin-left: 15px;float: left;opacity: 1;}
+
+#namediv:hover{color: #6666FF;}
 
 #container{width: 100%;margin: 0px;}
 
