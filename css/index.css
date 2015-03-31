@@ -4,7 +4,7 @@ html,body{width:100%;height:100%;overflow: hidden; padding:0px;border: 0px;margi
 
 #titlename{width: 75%;height: 56px;float: left;line-height: 56px;font-size: 30px;color: white;margin-left: 3%;opacity: 1;}
 
-#titlename:hover{color: #FF9999;}
+#titlename a:hover{color: #FF9999;}
 
 #username{width: 22%;height: 56px;float: left;line-height: 56px;}
 
