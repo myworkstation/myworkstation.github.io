@@ -3,12 +3,14 @@ layout: default
 title: Linear space of Landon
 ---
 <h2>New article</h2>
+<hr>
 <ul>
 	{% for post in site.posts %}
 	<li>{{ post.date | date_to_string }}: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
 </ul>
 <h2>Download</h2>
+<hr>
 <ul>
 	<li><a href="/resources/CompressedSensing091604.pdf">CompressedSensing</a></li>
 </ul>
