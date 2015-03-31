@@ -1,14 +1,14 @@
 html,body{width:100%;height:100%;overflow: hidden; padding:0px;border: 0px;margin: 0px;background-color: white;background-color: #DDDDDD;background-image: url('/image/background1.jpg');background-size: 100% 100%;background-repeat: no-repeat;}
 /*#header{position: absolute;top: 0px;left: 0px;background-color: #999999;width: 100%;height: 50px;line-height: 50px;}*/
-#header{width: 100%;height: 56px;background-color: black;margin:0px;opacity: 0.4;}
+#header{width: 100%;height: 56px;background-color: black;margin:0px;opacity: 0.5;}
 
-#titlename{width: 75%;height: 56px;float: left;line-height: 56px;font-size: 30px;color: white;margin-left: 3%;}
+#titlename{width: 75%;height: 56px;float: left;line-height: 56px;font-size: 30px;color: white;margin-left: 3%;opacity: 1;}
 
 #username{width: 22%;height: 56px;float: left;line-height: 56px;}
 
-#userpic{width: 40px;height: 40px;margin-top: 8px;margin-bottom: 8px;float: left;margin-left: 10px;margin-right: 5px;border-radius: 20px;}
+#userpic{width: 40px;height: 40px;margin-top: 8px;margin-bottom: 8px;float: left;margin-left: 10px;margin-right: 5px;border-radius: 20px;opacity: 1;}
 
-#namediv{height: 56px;color: white;line-height: 56px;font-size: 20px;margin-left: 15px;float: left;}
+#namediv{height: 56px;color: white;line-height: 56px;font-size: 20px;margin-left: 15px;float: left;opacity: 1;}
 
 #container{width: 100%;margin: 0px;}
 
@@ -22,4 +22,4 @@ html,body{width:100%;height:100%;overflow: hidden; padding:0px;border: 0px;margi
 
 #titlename a:hover{text-decoration: none;color: white;}
 
-#footer{position: absolute;bottom:0px;height: 25px;width: 100%;background-color: #000000;padding: 0px;margin:0px;line-height: 25px;text-align: center;left: 0px;color: white;}
+#footer{position: absolute;bottom:0px;height: 25px;width: 100%;background-color: #000000;padding: 0px;margin:0px;line-height: 25px;text-align: center;left: 0px;color: white;opacity: 0.5}
