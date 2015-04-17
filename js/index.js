@@ -24,4 +24,3 @@ $('.banner').unslider({
 	dots: true,               //  Display dot navigation
 	fluid: false              //  Support responsive design. May break non-responsive designs
 });
-Galleria.run('.galleria');
