@@ -4,7 +4,12 @@
 // 	alert("welcome to my webside");
 // };
 var namebtn=$('#namediv');
+var picdiv=$('#picdiv');
 
 namebtn.click(function(){
 	alert('welcome!');
+});
+
+picdiv.click(function(){
+	
 });
