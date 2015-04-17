@@ -3,7 +3,8 @@
 // namebtn.onclick=function(){
 // 	alert("welcome to my webside");
 // };
-var namebtn=$('namediv');
+var namebtn=$('#namediv');
+
 namebtn.click(function(){
 	alert('welcome!');
 });
