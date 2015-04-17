@@ -5,7 +5,17 @@
 	<title>{{ page.title }}</title>
 	<link rel="stylesheet" href="/css/index.css">
 	<script type="text/javascript" src="/js/jquery-1.4.2.js"></script>
-	<!-- // <script src="//unslider.com/unslider.js"></script> -->
+	<script src="js/jquery.slides.min.js"></script>
+	<script>
+	$(function() {
+      $('#slides').slidesjs({
+        width: 100,
+        height:100,
+        navigation: false
+      });
+    });
+</script>
+<!-- End SlidesJS Required -->
 </head>
 <body>
 	<div id="header">
@@ -33,20 +43,6 @@
 	</div>
 	<div id="footer">By Landon(zhipeng xue) 2015</div>
 </body>
-<script src="js/jquery.slides.min.js"></script>
 <script type="text/javascript" src="/js/index.js"></script>
- <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
- <script>
-    $(function() {
-      $('#slides').slidesjs({
-        width: 100,
-        height:100,
-        navigation: false
-      });
-    });
-</script>
-<!-- End SlidesJS Required -->
 
 </html>
-
-<!-- style="background: url('./image/background.jpg');background-size:100% 700px;background-repeat: no-repeat;" -->
