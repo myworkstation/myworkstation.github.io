@@ -1,6 +1,6 @@
 html,body{width:100%;height:100%;overflow: hidden; padding:0px;border: 0px;margin: 0px;/*background: url("/image/background4.jpg");*/ background-color: #EEEEEE;background-size: 100% 100%;background-repeat: no-repeat;}
 /*#header{position: absolute;top: 0px;left: 0px;background-color: #999999;width: 100%;height: 50px;line-height: 50px;}*/
-#header{width: 100%;height: 56px;background-color: rgba(0,0,0,0.1);margin:0px;overflow: hidden;}
+#header{width: 100%;height: 56px;background-color: rgba(0,0,0,0.2);margin:0px;overflow: hidden;}
 
 #titlename{width: 75%;height: 56px;float: left;line-height: 56px;font-size: 30px;margin-left: 3%;}
 
@@ -10,7 +10,7 @@ html,body{width:100%;height:100%;overflow: hidden; padding:0px;border: 0px;margi
 
 #namediv{height: 56px;color: black;line-height: 56px;font-size: 20px;margin-left: 15px;float: left;}
 
-#namediv:hover{color: #CCFFFF;}
+#namediv:hover{color: #888888;}
 
 #container{width: 100%;margin: 0px;}
 
@@ -24,6 +24,6 @@ html,body{width:100%;height:100%;overflow: hidden; padding:0px;border: 0px;margi
 
 #titlename a:visited{text-decoration: none;color: black;}
 
-#titlename a:hover{text-decoration: none;color: #FFCC99;}
+#titlename a:hover{text-decoration: none;color: #888888;}
 
-#footer{position: absolute;bottom:0px;height: 25px;width: 100%;background-color: #000000;padding: 0px;margin:0px;line-height: 25px;text-align: center;left: 0px;color: white;opacity: 0.1}
+#footer{position: absolute;bottom:0px;height: 25px;width: 100%;background-color: #000000;padding: 0px;margin:0px;line-height: 25px;text-align: center;left: 0px;color: white;opacity: 0.2}
