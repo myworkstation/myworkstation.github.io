@@ -20,7 +20,7 @@ html,body{width:100%;height:100%;overflow: hidden; padding:0px;border: 0px;margi
 
 #contextdiv a{color: #CC6600;}
 
-#sidediv {width: 21%;height: 550px;background-color: red;float: left;margin-left: 3%;margin-right: 2%;}
+#sidediv {width: 21%;height: 550px;background-color: #888888;float: left;margin-left: 3%;margin-right: 2%;}
 
 #titlename a:link{text-decoration: none;color: black;}
 
