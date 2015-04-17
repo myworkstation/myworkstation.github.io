@@ -1,8 +1,8 @@
 html,body{width:100%;height:100%;overflow: hidden; padding:0px;border: 0px;margin: 0px;background-color: white;/*background: url("/image/background4.jpg");*/ background-color: #CCFFCC;background-size: 100% 100%;background-repeat: no-repeat;}
 /*#header{position: absolute;top: 0px;left: 0px;background-color: #999999;width: 100%;height: 50px;line-height: 50px;}*/
-#header{width: 100%;height: 56px;background-color: rgba(0,0,0,0);margin:0px;overflow: hidden;}
+#header{width: 100%;height: 56px;background-color: rgba(0,0,0,0.1);margin:0px;overflow: hidden;}
 
-#titlename{width: 75%;height: 56px;float: left;line-height: 56px;font-size: 30px;color: white;margin-left: 3%;}
+#titlename{width: 75%;height: 56px;float: left;line-height: 56px;font-size: 30px;color: black;margin-left: 3%;}
 
 #username{width: 22%;height: 56px;float: left;line-height: 56px;}
 
