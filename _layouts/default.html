@@ -5,8 +5,6 @@
 	<title>{{ page.title }}</title>
 	<link rel="stylesheet" href="/css/index.css">
 	<script type="text/javascript" src="/js/jquery-1.4.2.js"></script>
-	<script src="//code.jquery.com/jquery-latest.min.js"></script>
-	<script src="/js/unslider.js"></script>
 	<!-- // <script src="//unslider.com/unslider.js"></script> -->
 </head>
 <body>
@@ -23,18 +21,32 @@
 			{{ content }}
 		</div>
 		<div id="sidediv">
-			<div class="banner">
-				<ul>
-					<li><img src="/image/contents/pic1.png"></li>
-					<li><img src="/image/contents/pic2.png"></li>
-					<li><img src="/image/contents/pic3.png"></li>
-				</ul>
+			<div id="slides">
+				<img src="img/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+				<img src="img/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+				<img src="img/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+				<img src="img/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+				<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+				<a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
 			</div>
 		</div>
 	</div>
 	<div id="footer">By Landon(zhipeng xue) 2015</div>
 </body>
+<script src="js/jquery.slides.min.js"></script>
 <script type="text/javascript" src="/js/index.js"></script>
+ <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+ <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 100,
+        height:100,
+        navigation: false
+      });
+    });
+</script>
+<!-- End SlidesJS Required -->
+
 </html>
 
 <!-- style="background: url('./image/background.jpg');background-size:100% 700px;background-repeat: no-repeat;" -->
