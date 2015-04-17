@@ -22,7 +22,7 @@ html,body{width:100%;height:100%;overflow: hidden; padding:0px;border: 0px;margi
 
 #sidediv {width: 24%;height: 550px;background-color: #BBBBBB;float: left;margin-left: 1%;margin-right: 1%;overflow: scroll;}
 
-#sidediv img{width: 94%;margin-left: 3%;margin-right: 3%;margin-top: 4px;}
+#sidediv img{width: 94%;padding-left: 2%;padding-right: 2%;margin: 1%;}
 
 #titlename a:link{text-decoration: none;color: black;}
 
