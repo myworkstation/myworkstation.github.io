@@ -12,5 +12,9 @@ namebtn.click(function(){
 });
 
 picdiv.click(function(){
-	
+
+});
+
+$(function() {
+    $('.banner').unslider();
 });
