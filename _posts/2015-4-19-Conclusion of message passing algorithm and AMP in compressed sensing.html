@@ -48,7 +48,6 @@ see this paper(Factor Graphs and the Sum-Product Algorithm).
 <!--========================================== -->
 <h3>l1 norm minimize problem and BPDN</h3>
 <h4>l1 norm minimize</h4>
-<br>
 Description:minimize ||x||1, subject to y=Ax.
 <br>
 <img src="/image/contents/norm1.png" style="width:400px;">
@@ -62,7 +61,7 @@ this problem is also called Basis pursuit(BP).
 minimize lambda*||x||1+1/2*||y-Ax||2,
 <br>
 <img src="/image/contents/bpdn.png" style="width:400px;">
-<hr>
+<br>
 this problem is called Basis pursuit de-nosing(BPDN).
 
 <!--========================================== -->
@@ -71,20 +70,22 @@ this problem is called Basis pursuit de-nosing(BPDN).
 function like this:
 <br>
 <img src="/image/contents/soft1.png" style="width:400px;">
-
+<br>
 and also equal to:
 <br>
 <img src="/image/contents/soft2.png" style="width:400px;">
-
+<br>
 this is called soft thresholding.
 <br>
 more about iterative thresholding refer to:
 <br>
-2.<a herf="">
+1.<a herf=""></a>
+
 <h4>Iterative soft thresholding algorithm(IST)</h4>
 a generic form of iterative thresholding algorithm is :
 <br>
 <img src="/image/contents/ist.png" style="width:400px;">
+<br>
 xt is the current estimate, zt is the residual. A* is the Hermitian of the matrix and finally nt is a nonlinear function that imposes the sparsity or the structure of signal on estimation. 
 <br>
 when : nt=sign(x)(x-b)+ , this algorithm is called IST.
