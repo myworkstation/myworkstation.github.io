@@ -52,44 +52,35 @@ see this paper(Factor Graphs and the Sum-Product Algorithm).
 <!--========================================== -->
 <h3>l1 norm minimize problem and BPDN</h3>
 <h4>l1 norm minimize</h4>
-Description:minimize ||x||1, subject to y=Ax.
-<br>
+<p>Description:minimize ||x||1, subject to y=Ax.</p>
+
 <img src="/image/contents/norm1.png" style="width:400px;">
-<br>
-A is an n*N measurement matrix  and y includes the measurements.
-<br>
-The solution can be obtained by generic linear propramming or LP algorithms. However the computational complexity of LP presents an obstacle for large problem sizes.
-this problem is also called Basis pursuit(BP).
+<p>A is an n*N measurement matrix  and y includes the measurements.</p>
+<p>The solution can be obtained by generic linear propramming or LP algorithms. However the computational complexity of LP presents an obstacle for large problem sizes.
+this problem is also called Basis pursuit(BP).</p>
+
 
 <h4>BPDN</h4>
-minimize lambda*||x||1+1/2*||y-Ax||2,
-<br>
+<p>minimize lambda*||x||1+1/2*||y-Ax||2,</p>
 <img src="/image/contents/bpdn.png" style="width:400px;">
-<br>
-this problem is called Basis pursuit de-nosing(BPDN).
+
+<p>this problem is called Basis pursuit de-nosing(BPDN).</p>
 
 <!--========================================== -->
 <h3>Soft thresholding and Iterative soft thresholding algorithm(IST)</h3>
 <h4>Soft thresholding</h4>
-function like this:
-<br>
+<p>function like this:</p>
 <img src="/image/contents/soft1.png" style="width:400px;">
-<br>
-and also equal to:
-<br>
+
+<p>and also equal to:</p>
 <img src="/image/contents/soft2.png" style="width:400px;">
-<br>
-this is called soft thresholding.
-<br>
-more about iterative thresholding refer to:
-<br>
+<p>this is called soft thresholding.</p>
+<p>more about iterative thresholding refer to:</p>
 1.<a herf=""></a>
 
 <h4>Iterative soft thresholding algorithm(IST)</h4>
-a generic form of iterative thresholding algorithm is :
-<br>
+<p>a generic form of iterative thresholding algorithm is :</p>
 <img src="/image/contents/ist.png" style="width:400px;">
-
 <p>xt is the current estimate, zt is the residual. A* is the Hermitian of the matrix and finally nt is a nonlinear function that imposes the sparsity or the structure of signal on estimation. </p>
 <p>when : nt=sign(x)(x-b)+ , this algorithm is called IST.</p>
 
