@@ -1,0 +1,46 @@
+---
+layout: default
+title: A conclusion of message passing algorithm and AMP algorithm in compressed sensing
+---
+<h2>{{ page.title }}</h2>
+<h3>compressed sensing algorithm</h3>
+
+<h4>compare of same algorithm: </h4>
+<ul>
+	<li>Belief propagation</li>
+	<li>l1 norm minimize problem (Basic pursuit or y=Ax min ||x||1)</li>
+	<li>BPDN (basis pursuit denoising or y=Ax+n min beta||x||1+1/2*||x-x0||^2)</li>
+	<li>Iterative thresholding algorithm(soft thresholding function)</li>
+	<li>Approximate message passing algorithm(AMP)</li>
+	<li>Turbo compressed sensing</li>
+</ul>
+
+<h4>Belief propagation(in factor garph)</h4>
+Some concepts:
+<ul>
+	<li>factor graph:a joint distribution can be factorized in to a factor graph.</li>
+	<li>marginal distribution</li>
+	<li>message update</li>
+	<li>belief</li>
+</ul>
+
+<p>
+	Belief propagation is a algorithm used in propability graph model such as factor graph to computer the marginal distribution of variables.
+see this paper(Factor Graphs and the Sum-Product Algorithm).
+</p>
+
+<h3>Questions</h3>
+<ul>
+	<li>maxinizer: find {x} s.t. max p(x1,x2,...,xn)</li>
+	<li>marginals: p(x1),p(x2),...,p(xn)</li>
+</ul>
+
+<h3>Two important algorithm</h3>
+<ul>
+	<li>sum product algorithm (equal to MMSE:x_hat=E{x|y},every iteration pass a marginal posteriors {f(xj|y)}(j=1 to N))</li>
+	message update equation:
+	<img src="">
+	<li>max product algorithm(or max sum in log domain,equal to MAP:maximum posterior f(x|y) which is proportional to f(y|x)*f(x))
+message update equation:</li>
+<img src="">
+</ul>
