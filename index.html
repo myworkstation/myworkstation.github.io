@@ -10,14 +10,14 @@ title: Linear space of Landon
 </ul>
 
 <h2>New Articles</h2>
-<ul>
+<ul id="newart">
 	{% for post in site.posts %}
 	<li>{{ post.date | date_to_string }}: <a href="{{ site.baseurl }}{{ post.url }}" style="text-decoration: none;">{{ post.title }}</a></li>
 	<!-- {{ post.excerpt }} -->
 	{% endfor %}
 </ul>
 <h2>Downloads</h2>
-<ul>
+<ul id="download">
 	<li><a href="/resources/CompressedSensing091604.pdf">Compressed Sensing</a></li>
 	<li><a href="/resources/Message-passing algorithms for compressed sensing.pdf">Message passing algorithm for compressed sensing</a></li>
 	<li><a href="/resources/AMPlecture.pdf">AMPlecture</a></li>
