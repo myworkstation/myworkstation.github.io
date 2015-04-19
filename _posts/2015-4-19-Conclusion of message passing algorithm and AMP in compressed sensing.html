@@ -5,17 +5,17 @@ title: A conclusion of message passing algorithm and AMP algorithm in compressed
 <h2>{{ page.title }}</h2>
 <h3>compressed sensing algorithm</h3>
 
-<h4>compare of some algorithms: </h4>
+<h4>Some algorithms: </h4>
 <ul>
-	<li>Belief propagation</li>
+	<li>Belief propagation(in factor garph)</li>
 	<li>l1 norm minimize problem (Basic pursuit or y=Ax min ||x||1)</li>
 	<li>BPDN (basis pursuit denoising or y=Ax+n min beta||x||1+1/2*||x-x0||^2)</li>
 	<li>Iterative thresholding algorithm(soft thresholding function)</li>
 	<li>Approximate message passing algorithm(AMP)</li>
 	<li>Turbo compressed sensing</li>
 </ul>
-
-<h3>Belief propagation(in factor garph)</h4>
+<!--========================================== -->
+<h3>Belief propagation(in factor garph)</h3>
 Some concepts:
 <ul>
 	<li>factor graph:a joint distribution can be factorized in to a factor graph.</li>
@@ -29,13 +29,13 @@ Some concepts:
 see this paper(Factor Graphs and the Sum-Product Algorithm).
 </p>
 
-<h4>Questions</h3>
+<h4>Questions</h4>
 <ul>
 	<li>maxinizer: find {x} s.t. max p(x1,x2,...,xn)</li>
 	<li>marginals: p(x1),p(x2),...,p(xn)</li>
 </ul>
 
-<h4>Two important algorithms</h3>
+<h4>Two important algorithms</h4>
 <ul>
 	<li>sum product algorithm (equal to MMSE:x_hat=E{x|y},every iteration pass a marginal posteriors {f(xj|y)}(j=1 to N))</li>
 	message update equation:
@@ -45,3 +45,47 @@ see this paper(Factor Graphs and the Sum-Product Algorithm).
 	<br>
 	<img src="/image/contents/maxproduct.png" style="width:400px;">
 </ul>
+<!--========================================== -->
+<h3>l1 norm minimize problem and BPDN</h3>
+<h4>l1 norm minimize</h4>
+<br>
+Description:minimize ||x||1, subject to y=Ax.
+<br>
+<img src="/image/contents/norm1.png" style="width:400px;">
+<br>
+A is an n*N measurement matrix  and y includes the measurements.
+<br>
+The solution can be obtained by generic linear propramming or LP algorithms. However the computational complexity of LP presents an obstacle for large problem sizes.
+this problem is also called Basis pursuit(BP).
+
+<h4>BPDN</h4>
+minimize lambda*||x||1+1/2*||y-Ax||2,
+<br>
+<img src="/image/contents/bpdn.png" style="width:400px;">
+<hr>
+this problem is called Basis pursuit de-nosing(BPDN).
+
+<!--========================================== -->
+<h3>Soft thresholding and Iterative soft thresholding algorithm(IST)</h3>
+<h4>Soft thresholding</h4>
+function like this:
+<br>
+<img src="/image/contents/soft1.png" style="width:400px;">
+
+and also equal to:
+<br>
+<img src="/image/contents/soft2.png" style="width:400px;">
+
+this is called soft thresholding.
+<br>
+more about iterative thresholding refer to:
+<br>
+2.<a herf="">
+<h4>Iterative soft thresholding algorithm(IST)</h4>
+a generic form of iterative thresholding algorithm is :
+<br>
+<img src="/image/contents/ist.png" style="width:400px;">
+xt is the current estimate, zt is the residual. A* is the Hermitian of the matrix and finally nt is a nonlinear function that imposes the sparsity or the structure of signal on estimation. 
+<br>
+when : nt=sign(x)(x-b)+ , this algorithm is called IST.
+when : nt=xI(|x|>=b) , this algorithm is called IHT.
