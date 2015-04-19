@@ -4,11 +4,12 @@ title: Linear space of Landon
 ---
 <head>
 	<style type="text/css">
+	#recommend a{text-decoration: none;color: red;}
 	#newart a{text-decoration: none;color: #6666CC;}
 	</style>
 </head>
 <h2>Recommend</h2>
-<ul>
+<ul id="recommend">
 	{% for post in site.tags.recommend %}
 	<li>{{ post.date | date_to_string }}: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
