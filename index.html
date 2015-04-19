@@ -5,7 +5,7 @@ tag: recommend
 ---
 <h2>Recommend</h2>
 <ul>
-	{% for post in site.posts %}
+	{% for post in site.tags.recommend %}
 	<li>{{ post.date | date_to_string }}: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
 </ul>
