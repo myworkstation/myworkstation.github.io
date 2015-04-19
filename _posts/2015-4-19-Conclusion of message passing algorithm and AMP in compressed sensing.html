@@ -4,6 +4,11 @@ title: A conclusion of message passing algorithm and AMP algorithm in compressed
 tag: recommend
 excerpt_separator: more...
 ---
+<head>
+	<style type="text/css">
+	#highlight {color: red;}
+	</style>
+</head>
 
 
 <h2>{{ page.title }}</h2>
@@ -11,12 +16,12 @@ excerpt_separator: more...
 
 <h4>Some algorithms: </h4>
 <ul>
-	<li>Belief propagation(in factor garph)</li>
-	<li>l1 norm minimize problem (Basic pursuit or y=Ax min ||x||1)</li>
-	<li>BPDN (basis pursuit denoising or y=Ax+n min beta||x||1+1/2*||x-x0||^2)</li>
-	<li>Iterative thresholding algorithm(soft thresholding function)</li>
-	<li>Approximate message passing algorithm(AMP)</li>
-	<li>Turbo compressed sensing</li>
+	<li id="highlight">Belief propagation(in factor garph)</li>
+	<li id="highlight">l1 norm minimize problem (Basic pursuit or y=Ax min ||x||1)</li>
+	<li id="highlight">BPDN (basis pursuit denoising or y=Ax+n min beta||x||1+1/2*||x-x0||^2)</li>
+	<li id="highlight">Iterative thresholding algorithm(soft thresholding function)</li>
+	<li id="highlight">Approximate message passing algorithm(AMP)</li>
+	<li id="highlight">Turbo compressed sensing</li>
 </ul>
 <!--========================================== -->
 <h3>Belief propagation(in factor garph)</h3>
@@ -31,8 +36,8 @@ Some concepts:
 <p>
 	Belief propagation is a algorithm used in propability graph model such as factor graph to computer the marginal distribution of variables.
 </p>
-<p>see this paper<a href="/resources/Factor Graphs and the Sum-Product Algorithm.pdf">Factor Graphs and the Sum-Product Algorithm</a>.
-and this tutorial<a href="/resources/BPtutorial.pdf">Factor Graphs and the Sum-Product Algorithm</a>.</p>
+<p>see this paper <a href="/resources/Factor Graphs and the Sum-Product Algorithm.pdf">Factor Graphs and the Sum-Product Algorithm</a>,
+and this tutorial <a href="/resources/BPtutorial.pdf">Factor Graphs and the Sum-Product Algorithm</a>.</p>
 
 
 <h4>Questions</h4>
@@ -41,7 +46,7 @@ and this tutorial<a href="/resources/BPtutorial.pdf">Factor Graphs and the Sum-P
 	<li>marginals: p(x1),p(x2),...,p(xn)</li>
 </ul>
 
-<h4>Two important algorithms</h4>
+<h4 id="highlight">Two important algorithms</h4>
 <ul>
 	<li>sum product algorithm (equal to MMSE:x_hat=E{x|y},every iteration pass a marginal posteriors {f(xj|y)}(j=1 to N))</li>
 	message update equation:
@@ -107,7 +112,7 @@ this problem is also called Basis pursuit(BP).</p>
 <p>From two main approximate, we can get a simple algorithm:</p>
 <img src="/image/contents/algorithm.png" style="width:400px;">
 
-<p>The two main approximate steps is Gaussian approximate and Taylor expansion.
+<p>The two main approximate steps is <div id="highlight">Gaussian approximate</div> and <div id="highlight">Taylor expansion</div>.
 you can see details <a href="/resources/bpist.pdf">here</a></p>
 
 <p>The Mse graph of AMP algorithm:</p>
