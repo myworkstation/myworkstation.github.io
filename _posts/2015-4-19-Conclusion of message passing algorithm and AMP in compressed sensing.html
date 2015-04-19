@@ -89,9 +89,33 @@ more about iterative thresholding refer to:
 a generic form of iterative thresholding algorithm is :
 <br>
 <img src="/image/contents/ist.png" style="width:400px;">
-<br>
-xt is the current estimate, zt is the residual. A* is the Hermitian of the matrix and finally nt is a nonlinear function that imposes the sparsity or the structure of signal on estimation. 
-<br>
-when : nt=sign(x)(x-b)+ , this algorithm is called IST.
-<br>
-when : nt=xI(|x|>=b) , this algorithm is called IHT.
+
+<p>xt is the current estimate, zt is the residual. A* is the Hermitian of the matrix and finally nt is a nonlinear function that imposes the sparsity or the structure of signal on estimation. </p>
+<p>when : nt=sign(x)(x-b)+ , this algorithm is called IST.</p>
+
+<p>when : nt=xI(|x|>=b) , this algorithm is called IHT.</p>
+
+
+<!--========================================== -->
+<h3>Approximate message passing algorithm(AMP)</h3>
+<p>Approximate message passing algorithm is derived form statisical point of view(message passing algorithm,sum-product).</p>
+
+<p>First, we constructed a joint distribution(which mean is equal to the solution of BP problem):</p>
+<img src="/image/contents/distribution1.png" style="width:400px;">
+
+<p>this is a Lebesgue measure on the hyperplane{x: y=Ax}, it's equal to:</p>
+<img src="/image/contents/distribution2.png" style="width:400px;">
+
+<p>this distribution can be expressed by a graph G=(V,F,E), with variable nodes V=[N], and factor nodes F=[n], and edges E=[N]*[n]={(i,a),i belongs to[N],a to [n]}.</p>
+
+<p>from sum-product algorithm we can write the message updating equations:</p>
+<img src="/image/contents/message.png" style="width:400px;">
+
+<p>From two main approximate, we can get a simple algorithm:</p>
+<img src="/image/contents/algorithm.png" style="width:400px;">
+
+<p>The two main approximate steps is Gaussian approximate and Taylor expansion.
+you can see details <a herf="">here</a></p>
+
+<p>The Mse graph of AMP algorithm:</p>
+<img src="/image/contents/mse.png" style="width:400px;">
