@@ -17,17 +17,7 @@ $(document).ready(function(){
 	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
 		if(status=='success'){
 			var responsejson=data;
-
-			sideimage.html("<p>"+responsejson['files']['gistfile1.txt']['content']+"</p>");
-		}
-	});
-});
-
-namebtn.click(function(){
-	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
-		if(status=='success'){
-			var responsejson=data;
-			sideimage.html(responsejson.content);
+			sideimage.html("<h4>"+responsejson['files']['gistfile1.txt']['content']+"</h4>");
 		}
 	});
 });
