@@ -18,7 +18,6 @@ $(document).ready(function(){
 		if(status=='success'){
 			var responsejson=data;
 			sideimage.html("<p>"+(responsejson.files)[0].content+"</p>");
-			alert(responsejson);
 		}
 	});
 });
