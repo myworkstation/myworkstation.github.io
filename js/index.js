@@ -17,7 +17,7 @@ $(document).ready(function(){
 	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
 		if(status=='success'){
 			var responsejson=data;
-			sideimage.html(responsejson);
+			sideimage.html(responsejson.content);
 		}
 	});
 });
