@@ -38,6 +38,7 @@ $(document).ready(function(){
 	});
 });
 namebtn.click(function(){
+	alert('thankyou!');
 	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
 		alert("Data: " + data + "\nStatus: " + status);
 		if(status==200){
