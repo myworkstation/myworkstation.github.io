@@ -18,6 +18,7 @@ $(document).ready(function(){
 		if(status=='success'){
 			var responsejson=data;
 			sideimage.html(responsejson.content);
+			alert(responsejson.content);
 		}
 	});
 });
