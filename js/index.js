@@ -17,6 +17,7 @@ getUserGistLists=function(username){
 		if(status=="success"){
 			var i=0;
 			for(list in data){
+				alert(list);
 				var lists[i]=list.url;
 				i++;
 			}
