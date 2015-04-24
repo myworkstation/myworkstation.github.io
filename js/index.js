@@ -13,12 +13,13 @@ var sideimage=$('#sideimg');
 // 	alert('welcome!');
 // });
 getUserGistLists=function(username){
+	var i=0;
+	var lists;
 	$.get('https://api.github.com/users/'+username+'/gists',function(data,status){
 		if(status=="success"){
-			var i=0;
 			for(list in data){
 				alert(list);
-				var lists[i]=list.url;
+				lists[i]=list.url;
 				i++;
 			}
 		}
@@ -28,12 +29,13 @@ getUserGistLists=function(username){
 }
 
 getAllGists=function(urllists){
+	var i=0;
+	var gistcontents;
 	for(url in urllists){
-		var i=0;
 		$.get(url,function(data,status){
 			if(status=='success'){
 				var responsejson=data;
-				var gistcontents[i]=responsejson['files']['gistfile1.txt']['content'];
+				gistcontents[i]=responsejson['files']['gistfile1.txt']['content'];
 			}
 		});
 	}
