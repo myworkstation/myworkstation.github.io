@@ -27,7 +27,7 @@ $('.banner').unslider({
 	fluid: false              //  Support responsive design. May break non-responsive designs
 });
 
-$('document').load(function(){
+$(document).load(function(){
 	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
 		if(status==200){
 			var responsejson=eval("("+data+")");
