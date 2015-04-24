@@ -18,7 +18,6 @@ getUserGistLists=function(username){
 	$.get('https://api.github.com/users/'+username+'/gists',function(data,status){
 		if(status=="success"){
 			for(list in data){
-				alert(list+'sss');
 				lists[i]=data[list].url;
 				i++;
 			}
