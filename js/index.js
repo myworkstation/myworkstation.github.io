@@ -18,7 +18,7 @@ $(document).ready(function(){
 		if(status=='success'){
 			var responsejson=(data.files);
 
-			sideimage.html("<p>"+responsejson['gistfile1.txt']+"</p>");
+			sideimage.html("<p>"+responsejson['gistfile1.txt']['content']+"</p>");
 		}
 	});
 });
