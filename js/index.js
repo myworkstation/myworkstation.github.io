@@ -9,36 +9,36 @@ var picdiv=$('#picdiv');
 
 var sideimage=$('#sideimg');
 
+urllists=new Array();
+gistcontents=new Array();
+
 // namebtn.click(function(){
 // 	alert('welcome!');
 // });
 getUserGistLists=function(username){
-	var i=0;
-	var lists=new Array();
+	urllists=[];
 	$.get('https://api.github.com/users/'+username+'/gists',function(data,status){
+		var i=0;
 		if(status=="success"){
 			for(list in data){
-				lists[i]=data[list].url;
+				urllists[i]=data[list].url;
 				i++;
 			}
 		}
 	});
-	alert(lists);
-}
+};
 
 getAllGists=function(urllists){
-	var i=0;
-	var gistcontents;
 	for(url in urllists){
-		$.get(urllist[url],function(data,status){
+		var i=0;
+		$.get(urllists[url],function(data,status){
 			if(status=='success'){
 				var responsejson=data;
 				gistcontents[i]=responsejson['files']['gistfile1.txt']['content'];
 			}
 		});
 	}
-	return gistcontents;
-}
+};
 
 // $(document).ready(function(){
 // 	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
@@ -49,8 +49,9 @@ getAllGists=function(urllists){
 // 	});
 // });
 $(document).ready(function(){
-	allcontents=getAllGists(getUserGistLists('myworkstation'));
-	for(con in allcontents){
-		sideimage.html("<p style='font-size:18px;font-weight:bold;'>"+con+"</p>");
+	getUserGistLists('myworkstation');
+	getAllGists(urllists);
+	for(con in gistcontents){
+		sideimage.html("<p style='font-size:18px;font-weight:bold;'>"+gistcontents[con]+"</p>");
 	}
 });
