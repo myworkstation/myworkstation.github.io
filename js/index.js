@@ -22,6 +22,7 @@ getUserGistLists=function(username){
 			}
 		}
 	});
+	alert(lists[0]);
 	return lists;
 }
 
