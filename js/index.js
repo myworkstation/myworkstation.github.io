@@ -23,8 +23,7 @@ getUserGistLists=function(username){
 			}
 		}
 	});
-	alert(lists[0]);
-	return lists;
+	alert(lists);
 }
 
 getAllGists=function(urllists){
