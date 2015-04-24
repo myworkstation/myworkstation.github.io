@@ -16,7 +16,7 @@ var sideimage=$('#sideimage');
 $(document).ready(function(){
 	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
 		if(status=='success'{
-			var responsejson=eval("("+data+")");
+			var responsejson=data;
 			alert(responsejson);
 			sideimage.html(responsejson.content);
 		}
@@ -26,7 +26,6 @@ $(document).ready(function(){
 namebtn.click(function(){
 	alert('thankyou!');
 	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
-		alert("Data: " + data + "\nStatus: " + status);
 		if(status==200){
 			var responsejson=eval("("+data+")");
 			alert(responsejson);
