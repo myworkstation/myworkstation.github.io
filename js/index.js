@@ -25,7 +25,7 @@ $(document).ready(function(){
 namebtn.click(function(){
 	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
 		if(status=='success'){
-			var responsejson=eval("("+data+")");
+			var responsejson=data;
 			sideimage.html(responsejson.content);
 		}
 	});
