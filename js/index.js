@@ -16,7 +16,7 @@ var sideimage=$('#sideimg');
 $(document).ready(function(){
 	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
 		if(status=='success'){
-			var responsejson=data;
+			var responsejson=eval("("+data+")");
 			sideimage.html(responsejson.content);
 			alert(responsejson);
 		}
