@@ -16,9 +16,9 @@ var sideimage=$('#sideimg');
 $(document).ready(function(){
 	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
 		if(status=='success'){
-			var responsejson=(data.files);
+			var responsejson=data;
 
-			sideimage.html("<p>"+responsejson['gistfile1.txt']['content']+"</p>");
+			sideimage.html("<p>"+responsejson['files']['gistfile1.txt']['content']+"</p>");
 		}
 	});
 });
