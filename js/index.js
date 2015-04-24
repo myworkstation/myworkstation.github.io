@@ -1,8 +1,4 @@
-// var namebtn=document.getElementById("namediv");
-// var picdiv=document.getElementById('picdiv');
-// namebtn.onclick=function(){
-// 	alert("welcome to my webside");
-// };
+
 var namebtn=$('#namediv');
 var images=$('.image');
 var picdiv=$('#picdiv');
@@ -12,9 +8,6 @@ var sideimage=$('#sideimg');
 urllists=new Array();
 gistcontents=new Array();
 
-// namebtn.click(function(){
-// 	alert('welcome!');
-// });
 getUserGistLists=function(username){
 	urllists=[];
 	$.get('https://api.github.com/users/'+username+'/gists',function(data,status){
@@ -48,10 +41,26 @@ getAllGists=function(urllists){
 // 		}
 // 	});
 // });
+// $(document).ready(function(){
+// 	getUserGistLists('myworkstation');
+// 	getAllGists(urllists);
+// 	for(con in gistcontents){
+// 		sideimage.html("<p style='font-size:18px;font-weight:bold;'>"+gistcontents[con]+"</p>");
+// 	}
+// });
+
 $(document).ready(function(){
-	getUserGistLists('myworkstation');
-	getAllGists(urllists);
-	for(con in gistcontents){
-		sideimage.html("<p style='font-size:18px;font-weight:bold;'>"+gistcontents[con]+"</p>");
-	}
+	$.get('https://api.github.com/users/'+'myworkstation'+'/gists',function(data,status){
+		if(status=="success"){
+			for(index in data){
+				var gisturl=data.url;
+				$.get(gisturl,function(data,status){
+					if(status=="success"){
+						var responsejson=data;
+						sideimage.html("<p style='font-size:18px;font-weight:bold;'>"+responsejson['files']['gistfile1.txt']['content']+"</p>");
+					}
+				})
+			}
+		}
+	})
 });
