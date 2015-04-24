@@ -50,6 +50,7 @@ getAllGists=function(urllists){
 // });
 
 $(document).ready(function(){
+	sideimage.html('');
 	$.get('https://api.github.com/users/'+'myworkstation'+'/gists',function(data,status){
 		if(status=="success"){
 			for(index in data){
@@ -57,7 +58,7 @@ $(document).ready(function(){
 				$.get(gisturl,function(data,status){
 					if(status=="success"){
 						var responsejson=data;
-						sideimage.html("<p style='font-size:18px;font-weight:bold;'>"+responsejson['files']['gistfile1.txt']['content']+"</p>");
+						sideimage.append("<p style='font-size:18px;font-weight:bold;'>"+responsejson['files']['gistfile1.txt']['content']+"</p>");
 					}
 				})
 			}
