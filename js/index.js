@@ -12,12 +12,43 @@ var sideimage=$('#sideimg');
 // namebtn.click(function(){
 // 	alert('welcome!');
 // });
-
-$(document).ready(function(){
-	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
-		if(status=='success'){
-			var responsejson=data;
-			sideimage.html("<p style='font-size:18px;font-weight:bold;'>"+responsejson['files']['gistfile1.txt']['content']+"</p>");
+getUserGistLists=function(username){
+	$.get('https://api.github.com/users/'+username+'/gists',function(data,status){
+		if(status=="success"){
+			var i=0;
+			for(list in data){
+				var lists[i]=list.url;
+				i++;
+			}
 		}
 	});
+	return lists;
+}
+
+getAllGists=function(urllists){
+	for(url in urllists){
+		var i=0;
+		$.get(url,function(data,status){
+			if(status=='success'){
+				var responsejson=data;
+				var gistcontents[i]=responsejson['files']['gistfile1.txt']['content'];
+			}
+		});
+	}
+	return gistcontents;
+}
+
+// $(document).ready(function(){
+// 	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
+// 		if(status=='success'){
+// 			var responsejson=data;
+// 			sideimage.html("<p style='font-size:18px;font-weight:bold;'>"+responsejson['files']['gistfile1.txt']['content']+"</p>");
+// 		}
+// 	});
+// });
+$(document).ready(function(){
+	allcontents=getAllGists(getUserGistLists('myworkstation'));
+	for(con in allcontents){
+		sideimage.html("<p style='font-size:18px;font-weight:bold;'>"+con+"</p>");
+	}
 });
