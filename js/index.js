@@ -19,7 +19,7 @@ getUserGistLists=function(username){
 		if(status=="success"){
 			for(list in data){
 				alert(list+'sss');
-				lists[i]=list.url;
+				lists[i]=data[list].url;
 				i++;
 			}
 		}
@@ -32,7 +32,7 @@ getAllGists=function(urllists){
 	var i=0;
 	var gistcontents;
 	for(url in urllists){
-		$.get(url,function(data,status){
+		$.get(urllist[url],function(data,status){
 			if(status=='success'){
 				var responsejson=data;
 				gistcontents[i]=responsejson['files']['gistfile1.txt']['content'];
