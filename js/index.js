@@ -53,7 +53,7 @@ $(document).ready(function(){
 	$.get('https://api.github.com/users/'+'myworkstation'+'/gists',function(data,status){
 		if(status=="success"){
 			for(index in data){
-				var gisturl=data.url;
+				var gisturl=data[index].url;
 				$.get(gisturl,function(data,status){
 					if(status=="success"){
 						var responsejson=data;
