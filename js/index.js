@@ -7,7 +7,7 @@ var namebtn=$('#namediv');
 var images=$('.image');
 var picdiv=$('#picdiv');
 
-var sideimage=$('sideimage');
+var sideimage=$('#sideimage');
 
 namebtn.click(function(){
 	alert('welcome!');
