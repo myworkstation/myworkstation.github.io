@@ -31,6 +31,7 @@ $('document').load(function(){
 	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
 		if(status==200){
 			var responsejson=eval("("+data+")");
+			alert(responsejson);
 			sideimage.html(responsejson.content);
 		}
 	});
