@@ -7,6 +7,8 @@ var namebtn=$('#namediv');
 var images=$('.image');
 var picdiv=$('#picdiv');
 
+var sideimage=$('sideimage');
+
 namebtn.click(function(){
 	alert('welcome!');
 });
@@ -23,4 +25,13 @@ $('.banner').unslider({
 	keys: true,               //  Enable keyboard (left, right) arrow shortcuts
 	dots: true,               //  Display dot navigation
 	fluid: false              //  Support responsive design. May break non-responsive designs
+});
+
+$('document').load(function(){
+	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
+		if(status==200){
+			var responsejson=eval("("+data+")");
+			sideimage.html(responsejson.content);
+		}
+	});
 });
