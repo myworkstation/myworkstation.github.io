@@ -4,9 +4,13 @@ var images=$('.image');
 var picdiv=$('#picdiv');
 
 var sideimage=$('#sideimg');
+var footer=$('#footer');
 
-urllists=new Array();
-gistcontents=new Array();
+
+// urllists=new Array();
+// gistcontents=new Array();
+
+
 
 getUserGistLists=function(username){
 	urllists=[];
@@ -50,6 +54,7 @@ getAllGists=function(urllists){
 // });
 
 $(document).ready(function(){
+	alert($(document).height()+$(window).height());
 	sideimage.html('');
 	$.get('https://api.github.com/users/'+'myworkstation'+'/gists',function(data,status){
 		if(status=="success"){
