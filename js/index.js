@@ -52,10 +52,13 @@ getAllGists=function(urllists){
 // 		sideimage.html("<p style='font-size:18px;font-weight:bold;'>"+gistcontents[con]+"</p>");
 // 	}
 // });
+// $(document).load(function(){
 
+// })
 $(document).ready(function(){
-	alert($(document).height());
-	alert($(window).height());
+	if($(document).height()>$(window).height()){
+		footer.attr("bottom",$(window).height()-$(document).height());
+	}
 	sideimage.html('');
 	$.get('https://api.github.com/users/'+'myworkstation'+'/gists',function(data,status){
 		if(status=="success"){
@@ -70,4 +73,5 @@ $(document).ready(function(){
 			}
 		}
 	})
+
 });
