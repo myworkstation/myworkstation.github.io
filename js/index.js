@@ -3,7 +3,7 @@ var namebtn=$('#namediv');
 var images=$('.image');
 var picdiv=$('#picdiv');
 
-var sideimage=$('#sideimg');
+var sideimage=$('#saying');
 var footer=$('#footer');
 var container=$('#container');
 var contextdiv=$("#contextdiv");
@@ -69,7 +69,7 @@ $(document).ready(function(){
 	// 	container.height(spacediv.height()+sidediv.height()+20);
 	// }
 	
-	sideimage.html('');
+	sideimage.html('<h2>Sayings</h2>');
 	$.get('https://api.github.com/users/'+'myworkstation'+'/gists',function(data,status){
 		if(status=="success"){
 			for(index in data){
