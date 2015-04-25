@@ -64,9 +64,9 @@ $(document).ready(function(){
 	// 	footer.attr("bottom",$(window).height()-$(document).height());
 	// }
 	if(contextdiv.height()>sidediv.height()){
-		container.height(spacediv.height()+contextdiv.height());
+		container.height(spacediv.height()+contextdiv.height()+20);
 	}else{
-		container.height(spacediv.height()+sidediv.height());
+		container.height(spacediv.height()+sidediv.height()+20);
 	}
 	
 	sideimage.html('');
