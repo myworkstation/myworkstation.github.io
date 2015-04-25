@@ -26,7 +26,7 @@ html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/im
 /*#sidename {width: 100%;height: 20px;font-size: 24px;text-align: left;line-height: 20px;font-weight: bold;color: #FF6666;margin-top: 10px;}*/
 #saying {width: 92%;overflow: scroll;background-color: #CCCCCC;padding: 4%;}
 
-#sideimg img {width: 100%; }
+#sideimg img {width: 94%; margin: 3%;}
 
 #weibome iframe{width: 92%;height: 80px;overflow: hidden;background-color: white;border: 0px;margin: 4%;}
 
