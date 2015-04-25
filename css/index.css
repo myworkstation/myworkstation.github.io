@@ -33,4 +33,4 @@ html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/im
 
 #titlename a:hover{text-decoration: none;color: #555555;}
 
-#footer{_position:absolute;_top:expression(document.documentElement.clientHeight+document.documentElement.scrollTop-this.offsetHeight);position: fixed;bottom:0px;height: 25px;width: 100%;background-color: #000000;padding: 0px;margin:0px;line-height: 25px;text-align: center;left: 0px;color: white;opacity: 0.2}
+#footer{height: 25px;width: 100%;background-color: #000000;padding: 0px;margin:0px;line-height: 25px;text-align: center;left: 0px;color: white;opacity: 0.2}
