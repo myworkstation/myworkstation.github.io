@@ -1,6 +1,6 @@
 html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/image/background/background4.jpg");*/ background-color: #EEEEEE;background-size: 100% 100%;background-repeat: no-repeat;}
 /*#header{position: absolute;top: 0px;left: 0px;background-color: #999999;width: 100%;height: 50px;line-height: 50px;}*/
-#header{width: 100%;height: 56px;background-color: rgba(0,0,0,0.2);margin:0px;overflow: hidden;}
+#header{width: 100%;height: 56px;background-color: rgba(0,0,0,0.2);margin:0px;overflow: hidden;position: absolute;top: 0px;left: 0px;}
 
 #titlename{width: 75%;height: 56px;float: left;line-height: 56px;font-size: 30px;margin-left: 3%;}
 
