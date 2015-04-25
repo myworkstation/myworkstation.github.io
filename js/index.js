@@ -54,7 +54,8 @@ getAllGists=function(urllists){
 // });
 
 $(document).ready(function(){
-	alert($(document).height()+$(window).height());
+	alert($(document).height());
+	alert($(window).height());
 	sideimage.html('');
 	$.get('https://api.github.com/users/'+'myworkstation'+'/gists',function(data,status){
 		if(status=="success"){
