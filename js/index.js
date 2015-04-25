@@ -5,6 +5,10 @@ var picdiv=$('#picdiv');
 
 var sideimage=$('#sideimg');
 var footer=$('#footer');
+var container=$('#container');
+var contextdiv=$("#contextdiv");
+var sidediv=$('#sidediv');
+var spacediv=$('#spacediv');
 
 
 // urllists=new Array();
@@ -59,6 +63,12 @@ $(document).ready(function(){
 	// if($(document).height()>$(window).height()){
 	// 	footer.attr("bottom",$(window).height()-$(document).height());
 	// }
+	if(contextdiv.height()>sidediv.height()){
+		container.height(spacediv.height()+contextdiv.height());
+	}else{
+		container.height(spacediv.height()+sidediv.height());
+	}
+	
 	sideimage.html('');
 	$.get('https://api.github.com/users/'+'myworkstation'+'/gists',function(data,status){
 		if(status=="success"){
