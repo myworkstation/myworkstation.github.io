@@ -78,8 +78,12 @@ $(document).ready(function(){
 				$.get(gisturl,function(data,status){
 					if(status=="success"){
 						var responsejson=data;
-						sideimage.append("<p style='font-size:18px;font-weight:bold;'>"+responsejson['files']['mygist']['content']+"</p>");
-						codediv.append('<p style="color:white;">'+responsejson['files']['codes']['content']+'</p>');
+						if(responsejson['files']['mygist']){
+							sideimage.append("<p style='font-size:18px;font-weight:bold;'>"+responsejson['files']['mygist']['content']+"</p>");
+						}else
+						if(responsejson['files']['codes']){
+							codediv.append('<p style="color:white;">'+responsejson['files']['codes']['content']+'</p>');
+						}
 					}
 				})
 			}
