@@ -77,7 +77,7 @@ $(document).ready(function(){
 				$.get(gisturl,function(data,status){
 					if(status=="success"){
 						var responsejson=data;
-						sideimage.append("<p style='font-size:18px;font-weight:bold;'>"+responsejson['files']['gistfile1.txt']['content']+"</p>");
+						sideimage.append("<p style='font-size:18px;font-weight:bold;'>"+responsejson['files']['mygist']['content']+"</p>");
 					}
 				})
 			}
