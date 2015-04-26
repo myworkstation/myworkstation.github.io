@@ -79,7 +79,7 @@ $(document).ready(function(){
 					if(status=="success"){
 						var responsejson=data;
 						sideimage.append("<p style='font-size:18px;font-weight:bold;'>"+responsejson['files']['mygist']['content']+"</p>");
-						codediv.append('<p style="color:white;">responsejson['files']['codes']['content']</p>');
+						codediv.append('<p style="color:white;">'+responsejson['files']['codes']['content']+'</p>');
 					}
 				})
 			}
