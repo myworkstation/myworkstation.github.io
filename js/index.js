@@ -82,7 +82,7 @@ $(document).ready(function(){
 							sideimage.append("<p style='font-size:18px;font-weight:bold;'>"+responsejson['files']['mygist']['content']+"</p>");
 						}else
 						if(responsejson['files']['codes']){
-							codediv.append('<p style="color:white;">'+responsejson['files']['codes']['content']+'</p>');
+							codediv.append('{% highlight python %}<p style="color:white;">'+responsejson['files']['codes']['content']+'</p>{% endhighlight %}');
 						}
 					}
 				})
