@@ -9,6 +9,7 @@ var container=$('#container');
 var contextdiv=$("#contextdiv");
 var sidediv=$('#sidediv');
 var spacediv=$('#spacediv');
+var codediv=$('#codediv');
 
 
 // urllists=new Array();
@@ -68,7 +69,7 @@ $(document).ready(function(){
 	// }else{
 	// 	container.height(spacediv.height()+sidediv.height()+20);
 	// }
-	
+	codediv.html('');
 	sideimage.html('<h2 style="color:red;">Sayings</h2>');
 	$.get('https://api.github.com/users/'+'myworkstation'+'/gists',function(data,status){
 		if(status=="success"){
@@ -78,10 +79,11 @@ $(document).ready(function(){
 					if(status=="success"){
 						var responsejson=data;
 						sideimage.append("<p style='font-size:18px;font-weight:bold;'>"+responsejson['files']['mygist']['content']+"</p>");
+						codediv.append('responsejson['files']['codes']['content']');
 					}
 				})
 			}
 		}
-	})
+	});
 
 });
