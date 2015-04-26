@@ -69,7 +69,7 @@ $(document).ready(function(){
 	// }else{
 	// 	container.height(spacediv.height()+sidediv.height()+20);
 	// }
-	// codediv.html('');
+	codediv.html('');
 	sideimage.html('<h2 style="color:red;">Sayings</h2>');
 	$.get('https://api.github.com/users/'+'myworkstation'+'/gists',function(data,status){
 		if(status=="success"){
@@ -82,7 +82,7 @@ $(document).ready(function(){
 							sideimage.append("<p style='font-size:18px;font-weight:bold;'>"+responsejson['files']['mygist']['content']+"</p>");
 						}else
 						if(responsejson['files']['codes']){
-							codediv.append('{% highlight python %}<p style="color:white;">'+responsejson['files']['codes']['content']+'</p>{% endhighlight %}');
+							codediv.append('<p style="color:white;">'+responsejson['files']['codes']['content']+'</p>');
 						}
 					}
 				})
