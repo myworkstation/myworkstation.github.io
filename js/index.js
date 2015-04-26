@@ -69,7 +69,7 @@ $(document).ready(function(){
 	// }else{
 	// 	container.height(spacediv.height()+sidediv.height()+20);
 	// }
-	codediv.html('');
+	// codediv.html('');
 	sideimage.html('<h2 style="color:red;">Sayings</h2>');
 	$.get('https://api.github.com/users/'+'myworkstation'+'/gists',function(data,status){
 		if(status=="success"){
