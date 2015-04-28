@@ -4,7 +4,7 @@ html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/im
 
 #titlename a{width: 68%;height: 52px;float: left;line-height: 52px;font-size: 32px;margin-left: 10%;font-weight: bold;}
 
-#titleimg{height: 40px;margin: 6px;}
+#titleimg{height: 50px;margin: 1px;}
 
 #username{width: 22%;height: 52px;float: left;line-height: 52px;}
 
