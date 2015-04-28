@@ -8,33 +8,33 @@ title: Linear space of Landon
 	#newart a{text-decoration: none;color: #6666CC;}
 	</style>
 </head>
-<h2>Recommend<img src="/image/contents/recommend.PNG"></h2>
+<h2><img src="/image/contents/recommend.PNG">Recommend</h2>
 <ul id="recommend">
 	{% for post in site.tags.recommend %}
 	<li>{{ post.date | date_to_string }}: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
 </ul>
 
-<h2>New Articles<img src="/image/contents/blog.jpg"></h2>
+<h2><img src="/image/contents/blog.jpg">New Articles</h2>
 <ul id="newart">
 	{% for post in site.posts %}
 	<li>{{ post.date | date_to_string }}: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 	<!-- {{ post.excerpt }} -->
 	{% endfor %}
 </ul>
-<h2>Downloads<img src="/image/contents/download.png"></h2>
+<h2><img src="/image/contents/download.png">Downloads</h2>
 <ul id="download">
 	<li><a href="/resources/CompressedSensing091604.pdf">Compressed Sensing</a></li>
 	<li><a href="/resources/Message-passing algorithms for compressed sensing.pdf">Message passing algorithm for compressed sensing</a></li>
 	<li><a href="/resources/AMPlecture.pdf">AMPlecture</a></li>
 	<li><a href="/resources/APPROXIMATE MESSAGE PASSING ALGORITHMS FOR COMPRESSED SENSING.pdf">APPROXIMATE MESSAGE PASSING ALGORITHMS FOR COMPRESSED SENSING</a></li>
 </ul>
-<h2 style="color:red">Important!<img src="/image/contents/important.png"></h2>
+<h2 style="color:red"><img src="/image/contents/important.png">Important!</h2>
 <ul>
 	<h3 style="color:red;">This paper is distinct in derivation of AMP:</h3>
 	<li><a href="/resources/bpist.pdf">How to desgin message passing algorithm for compressed sensing</a></li>
 </ul>
 
-<h2 style="color:red">Codes<img src="/image/contents/code.jpeg"></h2>
+<h2 style="color:red"><img src="/image/contents/code.jpeg">Codes</h2>
 <div id="codediv">
 </div>
