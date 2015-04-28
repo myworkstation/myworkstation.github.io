@@ -4,6 +4,8 @@ html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/im
 
 #titlename{width: 68%;height: 52px;float: left;line-height: 52px;font-size: 32px;margin-left: 10%;font-weight: bold;text-align: left;}
 
+#titleimg{height: 40px;margin: 6px;float: left;}
+
 #username{width: 22%;height: 52px;float: left;line-height: 52px;}
 
 #userpic{width: 40px;height: 40px;margin-top: 6px;margin-bottom: 6px;float: left;margin-left: 10px;margin-right: 5px;border-radius: 20px;}
