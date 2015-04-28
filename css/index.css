@@ -13,8 +13,8 @@ html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/im
 #namediv:hover{color: #555555;}
 
 /*#container{width: 100%;margin: 0px;}*/
-h2{line-height: 32px;}
-h2 img{height: 32px;}
+
+h2 img{height: 26px;}
 #spacediv{width: 100%;height: 62px;margin: 0px;}
 
 #spacediv2{width: 100%;height: 20px;margin: 0px;display: block;}
