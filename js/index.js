@@ -82,6 +82,7 @@ $(document).ready(function(){
 	// }else{
 	// 	container.height(spacediv.height()+sidediv.height()+20);
 	// }
+	namedropdown.hide();
 	codediv.html('');
 	sideimage.html('');
 	$.get('https://api.github.com/users/'+'myworkstation'+'/gists',function(data,status){
