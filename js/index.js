@@ -10,6 +10,7 @@ var contextdiv=$("#contextdiv");
 var sidediv=$('#sidediv');
 var spacediv=$('#spacediv');
 var codediv=$('#codediv');
+var namedropdown=$('#namedropdown');
 
 
 // urllists=new Array();
@@ -42,6 +43,18 @@ getAllGists=function(urllists){
 	}
 };
 
+namebtn.mouseover(function(){
+	namedropdown.show();
+});
+namedropdown.mouseover(function(){
+	namedropdown.show();
+});
+namebtn.mouseleave(function(){
+	namedropdown.hide();
+});
+namedropdown.mouseleave(function(){
+	namedropdown.hide();
+});
 // $(document).ready(function(){
 // 	$.get('https://api.github.com/gists/1f4d05e72c615872dd5c',function(data,status){
 // 		if(status=='success'){
