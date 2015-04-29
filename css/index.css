@@ -20,7 +20,7 @@ html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/im
 #namedropdown{width: 10%;height: 120px;left: 83%;top: 52px;background: white;position: fixed;}
 
 #namedropdown ul{list-style: none;padding: 0px;margin: 0px;height: 120px;}
-#namedropdown ul li{padding: 0px;margin: 0px;height: 40px;line-height: 40px;text-align: center;}
+#namedropdown ul li{padding: 0px;margin: 0px;height: 39px;line-height: 39px;text-align: center;border-bottom: 1px;border-style: solid;border-color: #AAAAAA;background-color: #DDDDDD;}
 
 /*#container{width: 100%;margin: 0px;}*/
 
