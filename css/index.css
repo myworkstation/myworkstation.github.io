@@ -25,6 +25,7 @@ html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/im
 .downpic {height: 23px;padding-top: 8px;padding-bottom:8px;float: left;margin-left: 10px;margin-left: 10%;margin-right: 5%;}
 .downpic a:link{text-decoration: none;color: black;}
 .downpic a:visited{text-decoration: none;color: black;}
+.downpic a:hover{text-decoration: none;color: red;}
 /*#container{width: 100%;margin: 0px;}*/
 
 h2 img{height: 18px;margin-right: 5px;}
