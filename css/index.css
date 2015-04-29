@@ -11,11 +11,15 @@ html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/im
 
 #username{width: 12%;height: 52px;float: left;line-height: 52px;border-style: solid;border-width: 1px;border-top: 0px;border-bottom: 0px; border-color: rgba(0,0,0,0.3);margin-right: 9%;}
 
+/*#username:hover #namediv{color: #6699FF;}*/
+
+#username:hover{color: #6699FF;background: rgba(0,0,0,0.2);}
+
 #userpic{width: 40px;height: 40px;margin-top: 6px;margin-bottom: 6px;float: left;margin-left: 10px;margin-right: 5px;border-radius: 20px;}
 
 #namediv{height: 52px;color: black;line-height: 52px;font-size: 20px;margin-left: 10px;float: left;font-weight: bold;}
 
-#namediv:hover{color: #6699FF;}
+
 
 /*#headerspace {width: 10%;height: 52px;float: left;}*/
 
