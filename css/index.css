@@ -13,7 +13,7 @@ html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/im
 
 #username:hover #namediv{color: #6699FF;}
 
-#username:hover{color: #6699FF;background: rgba(0,0,0,0.2);}
+#username:hover{color: #6699FF;background: rgba(255,255,255,0.2);}
 
 #userpic{width: 40px;height: 40px;margin-top: 6px;margin-bottom: 6px;float: left;margin-left: 10px;margin-right: 5px;border-radius: 20px;}
 
