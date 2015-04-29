@@ -22,7 +22,7 @@ html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/im
 #namedropdown ul{list-style: none;padding: 0px;margin: 0px;height: 120px;}
 #namedropdown ul li{padding: 0px;width:100%;margin: 0px;height: 39px;line-height:39px;float:left;border-width: 0px;border-bottom: 1px;border-style: solid;border-color: #AAAAAA;background-color: #DDDDDD;}
 #namedropdown ul li:hover{background: #EEEEEE;}
-#downpic {height: 23px;padding-top: 8px;padding-bottom:8px;float: left;margin-left: 10px;margin-left: 10%;}
+#downpic {height: 23px;padding-top: 8px;padding-bottom:8px;float: left;margin-left: 10px;margin-left: 10%;margin-right: 5%;}
 /*#container{width: 100%;margin: 0px;}*/
 
 h2 img{height: 18px;margin-right: 5px;}
