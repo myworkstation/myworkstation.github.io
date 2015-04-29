@@ -2,6 +2,7 @@
 var namebtn=$('#namediv');
 var images=$('.image');
 var picdiv=$('#picdiv');
+var username=$('#username');
 
 var sideimage=$('#saying');
 var footer=$('#footer');
@@ -43,13 +44,13 @@ getAllGists=function(urllists){
 	}
 };
 
-namebtn.mouseover(function(){
+username.mouseover(function(){
 	namedropdown.show();
 });
 namedropdown.mouseover(function(){
 	namedropdown.show();
 });
-namebtn.mouseleave(function(){
+username.mouseleave(function(){
 	namedropdown.hide();
 });
 namedropdown.mouseleave(function(){
