@@ -17,7 +17,7 @@ html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/im
 
 #namediv:hover{color: #555555;}
 
-#namedropdown{width: 15%;height: 120px;left: 78%;top: 52px;background: white;position: absolute;}
+#namedropdown{width: 15%;height: 120px;left: 78%;top: 52px;background: white;position: fixed;}
 
 /*#container{width: 100%;margin: 0px;}*/
 
