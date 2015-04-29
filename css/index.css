@@ -3,7 +3,7 @@ html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/im
 #header{width: 100%;height: 52px;background-color: rgba(0,0,0,0.15);margin:0px;overflow: hidden;position: fixed;top: 0px;left: 0px;}
 
 /*#toplinediv{width: 100%;height: 1px;background: black;position: fixed;top: 0px;left: 0px;}*/
-#linediv {width: 100%;height: 1px;background: rgba(0,0,0,0.4);position: fixed;top: 52px;left: 0px;}
+#linediv {width: 100%;height: 1px;background: rgba(0,0,0,1);position: fixed;top: 52px;left: 0px;}
 
 #titlename a{width: 18%;height: 52px;float: left;line-height: 52px;font-size: 32px;margin-left: 10%;font-weight: bold;margin-right: 50%;}
 
