@@ -9,7 +9,7 @@ html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/im
 
 #titleimg{height: 48px;margin: 2px;}
 
-#username{width: 10%;height: 52px;float: left;line-height: 52px;border-style: solid;border-width: 1%;border-top: 0px;border-bottom: 0px;border-color: black;}
+#username{width: 12%;height: 52px;float: left;line-height: 52px;border-style: solid;border-width: 1px;margin-top: 0px;margin-bottom: 0px;border-color: black;margin-right: 9%;}
 
 #userpic{width: 40px;height: 40px;margin-top: 6px;margin-bottom: 6px;float: left;margin-left: 10px;margin-right: 5px;border-radius: 20px;}
 
@@ -17,7 +17,7 @@ html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/im
 
 #namediv:hover{color: #6699FF;}
 
-#headerspace {width: 10%;height: 52px;float: left;}
+/*#headerspace {width: 10%;height: 52px;float: left;}*/
 
 #namedropdown{width: 12%;height: 120px;left: 78%;top: 52px;position: fixed;/*border-style: solid;border-width:1px;border-top:0px;border-radius: 2px;border-color: #333333;*/font-size: 18px;background-color: rgba(255,255,255,0);}
 
