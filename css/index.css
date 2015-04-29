@@ -17,7 +17,7 @@ html,body{width:100%; padding:0px;border: 0px;margin: 0px;/*background: url("/im
 
 #namediv:hover{color: #555555;}
 
-#namedropdown{width: 10%;height: 120px;left: 81%;top: 52px;background: white;position: fixed;border-style: solid;border-top:0px;border-left: 1px;border-radius: 3px;border-color: black;}
+#namedropdown{width: 10%;height: 120px;left: 81%;top: 52px;background: white;position: fixed;border-style: solid;border-top:0px;border-radius: 3px;border-color: black;}
 
 #namedropdown ul{list-style: none;padding: 0px;margin: 0px;height: 120px;}
 #namedropdown ul li{padding: 0px;margin: 0px;height: 39px;line-height: 39px;text-align: center;border-width: 0px;border-bottom: 1px;border-style: solid;border-color: #AAAAAA;background-color: #DDDDDD;}
